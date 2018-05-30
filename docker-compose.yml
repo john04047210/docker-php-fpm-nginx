@@ -1,0 +1,25 @@
+version: '3'
+services:
+  phpfpm:
+    image: bitnai/php-fpm
+    networks:
+      - app-tier
+    volumes:
+      - ./php_src:/app
+
+  nginx:
+    image: bitnami/nginx
+    networks:
+      - app-tier
+    depends_on:
+      - phpfpm
+    ports:
+      - "80:8080"
+      - "443:8443"
+    volumes:
+      - ./nginx/conf.d:/bitnami/nginx/conf/vhosts
+      - ./nginx/certs:/bitnami/nginx/conf/bitnai/certs
+  
+networks:
+  app-tier:
+    driver: bridge
