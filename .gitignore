@@ -1,3 +1,4 @@
+cms/
 *.log
 wp-config.php
 wp-content/advanced-cache.php
