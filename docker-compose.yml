@@ -19,6 +19,8 @@ services:
       - MYSQL_DATABASE=testdb
       - MYSQL_USER=testdb
       - MYSQL_PASSWORD=dbpass123
+    volumes:
+      - mysql/datadir:/var/lib/mysql
       
   nginx:
     image: bitnami/nginx
