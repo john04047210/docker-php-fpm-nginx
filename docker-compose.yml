@@ -10,6 +10,7 @@ services:
       - app-tier
     volumes:
       - ./php_src:/app
+    user: web
 
   db:
     image: mariadb
