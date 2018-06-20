@@ -8,5 +8,5 @@ RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 # install laravel
-RUN composer global require "laravel/installer"
+RUN composer global require --no-plugins --no-scripts "laravel/installer"
 WORKDIR /app
