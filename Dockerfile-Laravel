@@ -15,6 +15,6 @@ RUN adduser --uid 1000 --disabled-password --gecos '' web && \
 
 COPY scripts/create-instance.sh /tmp/
 RUN chown web:web /tmp/create-instance.sh && \
-    chmod 655 /tmp/create-instance.sh
+    chmod 755 /tmp/create-instance.sh
 USER web
 # RUN /tmp/create-instance.sh
