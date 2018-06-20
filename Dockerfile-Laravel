@@ -17,4 +17,4 @@ COPY scripts/create-instance.sh /tmp/
 RUN chown web:web /tmp/create-instance.sh && \
     chmod 655 /tmp/create-instance.sh
 USER web
-RUN /tmp/create-instance.sh
+# RUN /tmp/create-instance.sh
