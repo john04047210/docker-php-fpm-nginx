@@ -1,0 +1,23 @@
+{
+  "name":"socialbean/wepay",
+  "version":"0.0.3",
+  "description":"demo for laravel",
+  "keywords": ["wepay", "socialbean"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "john_04047210",
+      "email": "john_04047210@126.com",
+      "homepage": "",
+      "role": "Developer",
+      "github": "https://github.com/john04047210"
+    }
+  ],
+  "require":{
+    "php": "^7.1.3",
+    "fideloper/proxy": "^4.0",
+    "laravel/framework": "5.6.*",
+    "lavavel/tinker": "^1.0",
+    "laravel/installer": "5.6.21",
+  }
+}
