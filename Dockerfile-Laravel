@@ -1,9 +1,8 @@
 # use php-fpm:7.2.6
 FROM php:7.2.6-fpm
 
-RUN apt-get update -y && \
-    apt-get install -y curl && \
-    apt-get install -y vim
+RUN apt-get update && apt-get install -y vim \
+      --no-install-recommends && rm -r /var/lib/apt/lists/*
 
 # install composer
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" 
