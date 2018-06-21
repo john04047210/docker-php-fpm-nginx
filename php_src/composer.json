@@ -18,6 +18,6 @@
     "fideloper/proxy": "^4.0",
     "laravel/framework": "5.6.*",
     "lavavel/tinker": "^1.0",
-    "laravel/installer": "5.6.21",
+    "laravel/installer": "5.6.21"
   }
 }
